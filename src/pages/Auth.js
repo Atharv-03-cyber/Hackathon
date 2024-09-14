@@ -15,6 +15,9 @@ const Auth = () => {
         if (storedPassword && storedPassword === password) {
             setMessage('Login successful');
             
+            localStorage.setItem('loggedIn', 'true');
+            localStorage.setItem('currentUser', username);
+
             window.location.href = '/home';
         } else {
             setMessage('Invalid credentials');

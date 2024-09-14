@@ -9,12 +9,12 @@ const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         let users = JSON.parse(localStorage.getItem('users')) || [];
-        const user = users.find(user => user.username === username && user.password === password);
+        const user = localStorage.find(user => user.username === username && user.password === password);
 
         if (user) {
             localStorage.setItem('loggedIn', 'true');
             localStorage.setItem('currentUser', user);
-            navigate('/');
+            navigate('/home');
         } else {
             alert('Invalid username or password');
         }
