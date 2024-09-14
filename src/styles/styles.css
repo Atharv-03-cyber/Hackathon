@@ -1,0 +1,113 @@
+/* src/styles/App.css */
+
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Light gray background */
+}
+
+/* App Container */
+.app {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for the app */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #343a40; /* Dark gray color for text */
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add Button Styling */
+button {
+    background-color: #28a745; /* Green background */
+    color: #ffffff; /* White text */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Edit and Delete Button Styling */
+button.edit {
+    background-color: #007bff; /* Blue background */
+}
+
+button.edit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button.delete {
+    background-color: #dc3545; /* Red background */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* TODO List Styling */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* TODO Item Styling */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6; /* Light gray border for items */
+    background: #ffffff; /* White background for items */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: #f8f9fa; /* Light gray on hover */
+}
+
+.todo-item span {
+    flex: 1;
+    font-size: 16px;
+    color: #343a40; /* Dark gray text color */
+}
